@@ -4,7 +4,7 @@ int main(){
     printf("Enter no. of size: \n");
     scanf("%d",&n);
     printf("----------------------\n");
-    int *ptr = (int *)calloc(n,sizeof(int));
+    int *ptr = (int *)malloc(n*sizeof(int));
     printf("Enter array elements: \n");
     for(i=0;i<n;i++){
         scanf("%d",&ptr[i]);
